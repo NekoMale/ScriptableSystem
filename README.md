@@ -57,7 +57,7 @@ Default BaseVariable methods, properties and variables:
 | public | method | Equals(object other) | Default C# method overriden to check if variable value is equals to other variable value. Returns true also if BaseVariable<TArg, TEvent> tested with a TArg variable type |
 | public | method | GetHashCode() | 0 if \_value is null, else \_value hashcode |
 
-#####Existing variables:
+##### Existing variables:
 - BoolVariable, FloatVariable, GameObjectVariable, IntVariable, StringVariable, ULongVariable, Vector2Variable
 
 #### BaseEvent<TArg> (Advanced work status)
@@ -85,7 +85,7 @@ Default BaseEvent methods, properties and variables:
 | public | method | Invoke(TArg arg) | Invoke OnEvent to every listener, saves arg as \_lastMessage and set \_firstTime as false |
 | public | method | RemoveListener(System.Action<TArg> action) | Remove listener from OnEvent event |
 
-#####Existing events:
+##### Existing events:
 - BoolEvent, FloatEvent, GameObjectEvent, IntEvent, StringEvent, ULongEvent, Vector2Event
 - IntStringEvent (\*)
 - VoidEvent (\*\*)
@@ -93,7 +93,7 @@ Default BaseEvent methods, properties and variables:
 \* Events with two arguments use tuples (e.g. IntStringEvent = BaseEvent<(int, string)> in order to be used also with UnityEvents
 \*\* VoidEvent uses a fake argument. However, VoidEvent has a Invoke method without parameter.
 
-####BaseList<TArg> (Early work status)
+#### BaseList<TArg> (Early work status)
 Shared list with automatic event on list changes
 
 Default BaseList methods, properties and variables:
@@ -114,10 +114,10 @@ Default BaseList methods, properties and variables:
 | public | method | Clear() | Remove every value from list. OnCollectionChanged invoked, no matter if list was empty |
 | public | method | Contains(TArg item) | Returns true if list contains item else false |
 
-#####Existing lists:
+##### Existing lists:
 *None*
 
-####BaseArray<TArg> (Early work status)
+#### BaseArray<TArg> (Early work status)
 Shared array with automatic event on array changes
 
 Default BaseList methods, properties and variables:
@@ -132,12 +132,12 @@ Default BaseList methods, properties and variables:
 | public | property | Length { get; } | Returns how many elements array contains |
 | public | method | Contains(TArg item) | Returns true if array contains item else false |
 
-#####Existing Arrays:
+##### Existing Arrays:
 *None*
 
-###Companion Architecture
+###C ompanion Architecture
 
-####BaseEventsListener<TEvent, TArg> (Advanced work status)
+#### BaseEventsListener<TEvent, TArg> (Advanced work status)
 MonoBehaviour class who let GameObjects listen BaseEvents in order to not create references inside components.
 
 BaseEventsListener (BEL) contains an array with events to listen.
@@ -148,13 +148,13 @@ An array with events to listen element contains (you can set them by inspector):
 - If BEL has to ask last event on subscribe
 - BEL response when event invoked
 
-####VariablesInitializer \[DefaultExecutionOrder(-90)\] (Advanced work status)
+#### VariablesInitializer \[DefaultExecutionOrder(-90)\] (Advanced work status)
 MonoBehaviour class who initializes every BaseVariables assigned by inspector.
 Initialization happens when GameObject with VariablesInitialized component is enabled => OnEnable
 
-###Tools
+### Tools
 
-####Scriptable Events Viewer (Early work status)
+#### Scriptable Events Viewer (Early work status)
 **Position:** Tools/Nameless Games/Scriptable System/Scriptable Events Viewer
 
 Let you track every BaseEvent ScriptableObject references (listeners and invokers).
@@ -166,14 +166,14 @@ Actually, precise tracking of every reference is not guaranteed, expecially when
 
 **Variables, Lists, Arrays tracking on roadmap**
 
-####Scriptable Type Creator (Early work status)
+#### Scriptable Type Creator (Early work status)
 **Position:** Tools/Nameless Games/Scriptable System/Scriptable Type Creator
 
 Let you easy creates Variables and Events without coding them (still you can do it, it's just so boring and slow).
 
 **Lists and Arrays tracking on roadmap**
 
-###Manually Extending System
+### Manually Extending System
 **CustomTypeEvent.cs**
 ```csharp
 using UnityEngine;
@@ -223,12 +223,11 @@ public class CustomTypeArray : BaseArray<CustomType>
 }
 ```
 
-###Requirements
+### Requirements
 - Unity 6000.0.X 
 
-###Contributing
+### Contributing
 Contributions are always welcom. Feel free to open issues or pull requests.
 
-###License
-
+### License
 Distributed under MIT License

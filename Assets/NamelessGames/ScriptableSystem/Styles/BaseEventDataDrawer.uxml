@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/BaseEventDataDrawer.uss?fileID=7433441132597879392&amp;guid=fa2f4023ac529c2428b73b728d1fabb3&amp;type=3#BaseEventDataDrawer" />
+    <ui:VisualElement name="event-listened-item" style="flex-grow: 1;">
+        <ui:VisualElement name="event-listener-field-container" style="flex-grow: 1;">
+            <ui:Button text="Details" name="event-details-button" />
+            <uie:PropertyField name="event-field" />
+            <ui:Button text="-" name="remove-event-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="event-listener-mode-container" style="flex-grow: 1;">
+            <ui:VisualElement name="modes-container" style="flex-grow: 1;">
+                <ui:VisualElement name="on-enable-mode-container" class="mode-field-container" style="flex-grow: 1;">
+                    <ui:Toggle label="Sub on enable" tooltip="Subscribe to event when gameobject enabled" name="on-enable-field" />
+                </ui:VisualElement>
+                <ui:VisualElement name="on-disable-mode-container" class="mode-field-container" style="flex-grow: 1;">
+                    <ui:Toggle label="Unsub on disable" tooltip="Unsubscribe from event when gameObject disabled" name="on-disable-field" />
+                </ui:VisualElement>
+                <ui:VisualElement name="on-sub-mode-container" class="mode-field-container" style="flex-grow: 1;">
+                    <ui:Toggle label="On sub ask last event" tooltip="When subscribe to event, ask to event last invoke" name="ask-last-event-field" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <uie:PropertyField name="event-responses-field" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

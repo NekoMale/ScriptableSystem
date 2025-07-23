@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/BaseEventDrawer.uss?fileID=7433441132597879392&amp;guid=3e2a59be2e70a734682d99c5e3c2868e&amp;type=3#BaseEventDrawer" />
+    <ui:VisualElement name="BaseEventProperty">
+        <ui:VisualElement name="FieldContainer" style="flex-grow: 1;">
+            <uie:ObjectField label="Object Field" />
+            <ui:TextField label="Text Field" placeholder-text="filler text" name="BaseEventField_Name" class="hidden" />
+        </ui:VisualElement>
+        <ui:Button text="[-&gt;]" name="view-event-button" />
+        <ui:Button text="+" name="CreateButton" />
+        <ui:Button text="✓" name="ConfirmButton" class="hidden" />
+        <ui:Button text="x" name="CancelButton" class="hidden" />
+        <ui:Button text="Delete" name="DeleteButton" class="hidden" />
+    </ui:VisualElement>
+</ui:UXML>

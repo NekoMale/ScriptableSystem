@@ -1,0 +1,62 @@
+#empty-events-label-container {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(42, 42, 42);
+    border-right-color: rgb(42, 42, 42);
+    border-top-color: rgb(42, 42, 42);
+    border-bottom-color: rgb(42, 42, 42);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(70, 70, 70);
+    color: rgb(182, 182, 182);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-warning-image {
+    width: 20px;
+    max-width: 20px;
+    height: 25px;
+    max-height: 25px;
+    background-image: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=4584671053970592468&guid=22a4b8fe7fc67a44da04c50779d71f13&type=3#console.warnicon");
+}
+
+#box-warning-label {
+    font-size: 16px;
+}
+
+#add-event-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#events-header {
+    flex-direction: row;
+    -unity-text-align: middle-left;
+    -unity-font-style: normal;
+    background-color: rgb(40, 40, 40);
+    color: rgb(182, 182, 182);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.show-hide-events-button {
+    font-size: 14px;
+}
+
+#amount-events-listened-label {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}

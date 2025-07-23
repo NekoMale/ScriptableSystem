@@ -1,0 +1,200 @@
+#event-viewer-container {
+    flex-direction: row;
+    background-color: rgb(70, 70, 70);
+    flex-grow: 1;
+}
+
+#events-scroll-view {
+    width: 30%;
+    min-width: 250px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-right-width: 1px;
+}
+
+#events-scroll-view TemplateContainer {
+    flex-grow: 1;
+}
+
+#event-item {
+    -unity-text-align: middle-center;
+    color: rgb(208, 208, 208);
+    margin-bottom: 5px;
+    height: 30px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#event-item > Button {
+    background-color: rgb(88, 88, 88);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(118, 118, 118);
+    border-right-color: rgb(118, 118, 118);
+    border-top-color: rgb(118, 118, 118);
+    border-bottom-color: rgb(118, 118, 118);
+}
+
+#event-item > Button:hover {
+    background-color: rgb(99, 99, 99);
+}
+
+#event-item > .event-button--active {
+    background-color: rgb(57, 142, 56);
+    -unity-font-style: bold;
+}
+
+#event-item > .event-button--active:hover {
+    background-color: rgb(89, 152, 88);
+}
+
+#event-item > #event-button {
+    text-overflow: ellipsis;
+    max-width: 85%;
+    min-width: 85%;
+}
+
+#event-item > #event-ping {
+    max-width: 15%;
+    min-width: 25px;
+}
+
+#event-details {
+    width: 70%;
+    min-width: 500px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-left-width: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+#event-details > #container {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#event-header {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    max-height: 40px;
+    background-color: rgb(53, 53, 53);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+#event-raiser {
+    height: 40px;
+    max-height: 40px;
+    background-color: rgb(79, 79, 79);
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom-width: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+#event-raiser > PropertyField {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#event-raiser > PropertyField Label {
+    height: 25px;
+    -unity-text-align: middle-left;
+    font-size: 16px;
+}
+
+#event-raiser > PropertyField .unity-base-field__input {
+    height: 25px;
+}
+
+#event-listeners-invokers {
+    flex-direction: row;
+}
+
+#event-listeners {
+    border-right-width: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    width: 50%;
+    max-width: 50%;
+}
+
+#event-invokers {
+    width: 50%;
+    max-width: 50%;
+}
+
+#event-referral-item {
+    flex-direction: row;
+    justify-content: space-between;
+    -unity-text-align: middle-left;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.label {
+    color: rgb(208, 208, 208);
+}
+
+.header-label {
+    -unity-font-style: bold;
+    font-size: 18px;
+    -unity-text-align: upper-center;
+}
+
+.sub-header {
+    flex-grow: 1;
+    height: 40px;
+    justify-content: center;
+    max-height: 40px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-width: 1px;
+}
+
+.odd {
+}
+
+.even {
+    background-color: rgb(99, 99, 99);
+}

@@ -1,0 +1,4 @@
+[System.Serializable]
+public class {VAR_TYPE_NAME}EventData : BaseEventData<{VAR_TYPE_NAME}Event, {VAR_TYPE}> { }
+
+public class {VAR_TYPE_NAME}EventsListener : BaseEventsListener<{VAR_TYPE_NAME}EventData, {VAR_TYPE_NAME}Event, {VAR_TYPE}> { }

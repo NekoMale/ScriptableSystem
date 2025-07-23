@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 608783b821f95b04c9bca3034d7ab47a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _drawerTemplate: {fileID: 9197481963319205126, guid: adee4c18278b20045a2e5d0f10ff04b0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

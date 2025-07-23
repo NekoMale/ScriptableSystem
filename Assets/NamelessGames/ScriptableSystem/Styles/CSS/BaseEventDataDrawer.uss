@@ -1,0 +1,50 @@
+#event-listened-item {
+}
+
+#event-listener-field-container {
+    flex-direction: row;
+    background-color: rgb(51, 51, 51);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(40, 40, 40);
+    border-right-color: rgb(40, 40, 40);
+    border-top-color: rgb(40, 40, 40);
+    border-bottom-color: rgb(40, 40, 40);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#event-field {
+    flex-grow: 1;
+}
+
+#event-field #FieldContainer > ObjectField > Label {
+    color: rgb(210, 210, 210);
+}
+
+#event-listener-mode-container {
+    display: none;
+    background-color: rgb(72, 72, 72);
+    border-left-color: rgb(40, 40, 40);
+    border-right-color: rgb(40, 40, 40);
+    border-top-color: rgb(40, 40, 40);
+    border-bottom-color: rgb(40, 40, 40);
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#modes-container {
+    flex-direction: row;
+}
+
+.mode-field-container Toggle {
+    flex-direction: column;
+    align-items: center;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+}

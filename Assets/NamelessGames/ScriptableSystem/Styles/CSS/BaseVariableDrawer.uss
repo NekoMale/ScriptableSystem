@@ -1,0 +1,101 @@
+#BaseVariableFoldout > .unity-foldout__toggle {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+#PropertyTopContainer {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#PropertyTopContainer > .unity-button {
+    padding-right: 0;
+    padding-left: 0;
+    width: 20px;
+    margin-left: 5px;
+}
+
+#BaseVariableField > Label {
+    margin-left: 0;
+}
+
+#PropertyBottomContainer {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(120, 120, 120);
+    border-right-color: rgb(120, 120, 120);
+    border-top-color: rgb(120, 120, 120);
+    border-bottom-color: rgb(120, 120, 120);
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.value-field {
+}
+
+.value-field > Label {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+    min-width: 100%;
+    max-width: 100%;
+    border-left-color: rgb(96, 96, 96);
+    border-right-color: rgb(96, 96, 96);
+    border-top-color: rgb(96, 96, 96);
+    border-bottom-color: rgb(96, 96, 96);
+    border-bottom-width: 1px;
+}
+
+#StartingValueContainer {
+    border-left-color: rgb(96, 96, 96);
+    border-right-color: rgb(96, 96, 96);
+    border-top-color: rgb(96, 96, 96);
+    border-bottom-color: rgb(96, 96, 96);
+    border-right-width: 1px;
+}
+
+#ValueChangedEventContainer {
+    border-left-color: rgb(96, 96, 96);
+    border-right-color: rgb(96, 96, 96);
+    border-top-color: rgb(96, 96, 96);
+    border-bottom-color: rgb(96, 96, 96);
+    border-left-width: 1px;
+}
+
+.value-field PropertyField {
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.value-field > PropertyField > .unity-base-field {
+    align-items: center;
+    width: 95%;
+    min-width: 95%;
+    max-width: 95%;
+}
+
+.value-field PropertyField TemplateContainer {
+    align-items: center;
+    width: 95%;
+    min-width: 95%;
+    max-width: 95%;
+}
+
+.value-field > .unity-property-field > .unity-base-field > .unity-label {
+    display: none;
+}
+
+.unity-composite-field__field-spacer {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}

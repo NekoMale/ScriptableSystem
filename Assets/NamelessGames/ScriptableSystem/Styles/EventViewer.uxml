@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/EventViewer.uss?fileID=7433441132597879392&amp;guid=edafc80937f42c1468399dc35434ebd2&amp;type=3#EventViewer" />
+    <ui:VisualElement name="event-viewer-container" style="flex-grow: 1;">
+        <ui:ScrollView name="events-scroll-view" />
+        <ui:VisualElement name="event-details">
+            <ui:VisualElement name="container" style="flex-grow: 1;">
+                <ui:VisualElement name="event-header" style="flex-grow: 1;">
+                    <ui:Label text="OnSelectionChanged" name="event-name-label" binding-path="m_Name" class="label header-label" />
+                    <ui:Button text="(R)" />
+                </ui:VisualElement>
+                <ui:VisualElement name="event-raiser" style="flex-grow: 1;">
+                    <uie:PropertyField name="event-raise-field" binding-path="_fakeArg" />
+                    <ui:Button text="Raise" name="event-raise-button" />
+                </ui:VisualElement>
+                <ui:VisualElement name="event-listeners-invokers" style="flex-grow: 1;">
+                    <ui:VisualElement name="event-listeners" style="flex-grow: 1;">
+                        <ui:VisualElement name="event-listeners-header" class="sub-header" style="flex-grow: 1;">
+                            <ui:Label text="Listeners" class="label header-label" />
+                        </ui:VisualElement>
+                        <ui:ListView name="event-listeners-list-view" binding-path="ListenersReferrals" item-template="project://database/Assets/NamelessGames/ScriptableSystem/Styles/event-referral-item.uxml?fileID=9197481963319205126&amp;guid=496c0370971376a4dba046bf9741c233&amp;type=3#event-referral-item" show-bound-collection-size="false" show-alternating-row-backgrounds="ContentOnly" virtualization-method="DynamicHeight" binding-source-selection-mode="AutoAssign" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="event-invokers" style="flex-grow: 1;">
+                        <ui:VisualElement name="event-invokers-header" class="sub-header">
+                            <ui:Label text="Invokers" class="label header-label" />
+                        </ui:VisualElement>
+                        <ui:ListView name="event-invokers-list-view" binding-path="InvokersReferrals" item-template="project://database/Assets/NamelessGames/ScriptableSystem/Styles/event-referral-item.uxml?fileID=9197481963319205126&amp;guid=496c0370971376a4dba046bf9741c233&amp;type=3#event-referral-item" show-bound-collection-size="false" show-alternating-row-backgrounds="ContentOnly" virtualization-method="DynamicHeight" binding-source-selection-mode="AutoAssign" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

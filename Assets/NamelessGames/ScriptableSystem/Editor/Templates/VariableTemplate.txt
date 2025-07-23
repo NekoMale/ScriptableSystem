@@ -1,0 +1,4 @@
+﻿using UnityEngine;
+
+[CreateAssetMenu(fileName = "{VAR_TYPE_NAME} Variable", menuName = "Nameless Games/Scriptable System/Variables/{VAR_TYPE_NAME} Variable")]
+public class {VAR_TYPE_NAME}Variable : BaseVariable<{VAR_TYPE}, {VAR_TYPE_NAME}Event> { }

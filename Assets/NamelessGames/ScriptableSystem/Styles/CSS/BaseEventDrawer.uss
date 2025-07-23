@@ -1,0 +1,12 @@
+#BaseEventProperty {
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#BaseEventField {
+}
+
+.hidden {
+    display: none;
+}

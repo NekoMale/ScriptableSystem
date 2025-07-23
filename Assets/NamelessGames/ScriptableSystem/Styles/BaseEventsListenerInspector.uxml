@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/BaseEventsListenerInspector.uss?fileID=7433441132597879392&amp;guid=e62869b6b3bde964e9ad5fe6d3c37e4a&amp;type=3#BaseEventsListenerInspector" />
+    <ui:VisualElement name="empty-events-container" style="flex-grow: 1;">
+        <ui:VisualElement name="empty-events-label-container">
+            <ui:VisualElement name="box-warning-image" style="flex-grow: 1;" />
+            <ui:Label text="No events listened" name="box-warning-label" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="populated-events-container" style="flex-grow: 1;">
+        <ui:VisualElement name="base-events-container" style="flex-grow: 1;">
+            <ui:VisualElement name="events-header" style="flex-grow: 1;">
+                <ui:Button text="Show" name="show-events-button" class="show-hide-events-button" />
+                <ui:Label text="Events listened (" />
+                <ui:Label text="Label" name="amount-events-listened-label" binding-path="_baseEventsDatas.Array.size" />
+                <ui:Label text=")" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="events-container" style="flex-grow: 1;">
+            <ui:ListView item-template="project://database/Assets/NamelessGames/ScriptableSystem/Styles/BaseEventDataDrawer.uxml?fileID=9197481963319205126&amp;guid=a85401207ab5f25409e0e632ea12efc3&amp;type=3#BaseEventDataDrawer" virtualization-method="DynamicHeight" show-bound-collection-size="false" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button text="Add Event" name="add-event-button" />
+</ui:UXML>

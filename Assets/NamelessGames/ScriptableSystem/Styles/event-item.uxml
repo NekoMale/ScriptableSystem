@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="event-item" style="flex-grow: 1;">
+        <ui:Button text="Button" name="event-button" />
+        <ui:Button text="ò" name="event-ping" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="event-referral-item" style="flex-grow: 1;">
+        <ui:Label binding-path="ReferralLabel" text="Default Text" name="event-referral-label" class="label" />
+        <ui:Button text="(O)" name="event-referral-ping-button" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/BaseVariableDrawer.uss?fileID=7433441132597879392&amp;guid=74249b4d3afc57f48952a0d4fb08b407&amp;type=3#BaseVariableDrawer" />
+    <ui:Foldout toggle-on-label-click="false" name="BaseVariableFoldout">
+        <ui:VisualElement name="PropertyBottomContainer">
+            <ui:VisualElement name="StartingValueContainer" class="value-field" style="flex-grow: 1;">
+                <ui:Label text="Starting Value" name="StartingValueLabel" />
+                <uie:PropertyField name="StartingValue" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CurrentValueContainer" class="value-field" style="flex-grow: 1;">
+                <ui:Label text="Current Value" name="CurrentValueLabel" />
+                <uie:PropertyField name="CurrentValue" label="Current Value" class="value-field" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ValueChangedEventContainer" class="value-field" style="flex-grow: 1;">
+                <ui:Label text="On Value Changed" name="ValueChangedEventLabel" />
+                <uie:PropertyField name="ValueChangedEvent" label="On Value Changed" class="value-field" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:Foldout>
+    <ui:VisualElement name="PropertyTopContainer">
+        <ui:VisualElement name="FieldContainer" style="flex-grow: 1;">
+            <uie:ObjectField label="Object Field" name="BaseVariableField" />
+            <ui:TextField label="Text Field" placeholder-text="filler text" name="NewVariableNameField" class="hidden" />
+        </ui:VisualElement>
+        <ui:Button text="+" name="CreateButton" />
+        <ui:Button text="✓" name="ConfirmButton" class="hidden" />
+        <ui:Button text="x" name="CancelButton" class="hidden" />
+    </ui:VisualElement>
+</ui:UXML>

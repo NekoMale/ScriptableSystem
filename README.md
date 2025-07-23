@@ -55,7 +55,7 @@ Default BaseVariable methods, properties and variables:
 | public | *sealed* method | Initialize() | Method called to set starting value on variable |
 | public | implicit operator | TArg | Automatically convert BaseVartiable<TArg, TEvent> into its value |
 | public | method | Equals(object other) | Default C# method overriden to check if variable value is equals to other variable value. Returns true also if BaseVariable<TArg, TEvent> tested with a TArg variable type |
-| public | method | GetHashCode() | 0 if __value is null, else __value hashcode |
+| public | method | GetHashCode() | 0 if \_value is null, else \_value hashcode |
 
 #####Existing variables:
 - BoolVariable, FloatVariable, GameObjectVariable, IntVariable, StringVariable, ULongVariable, Vector2Variable
@@ -82,7 +82,7 @@ Default BaseEvent methods, properties and variables:
 | private | variable | \_firstTime | Store if event has been called at least one time |
 | private | variable | \_lastMessage | Store last event parameter |
 | public | method | AddListener(System.Action<TArg> action, bool getLastEvent = false) | Add listener to OnEvent event. If *getLastEvent* parameter true and event has been called before this registration, raise event just for this listener |
-| public | method | Invoke(TArg arg) | Invoke OnEvent to every listener, saves arg as __lastMessage and set __firstTime as false |
+| public | method | Invoke(TArg arg) | Invoke OnEvent to every listener, saves arg as \_lastMessage and set \_firstTime as false |
 | public | method | RemoveListener(System.Action<TArg> action) | Remove listener from OnEvent event |
 
 #####Existing events:
@@ -125,7 +125,7 @@ Default BaseList methods, properties and variables:
 | --- | --- | --- | --- |
 | protected | variable | \_items | Encapsulated array containing values |
 | public | variable | OnCollectionChanged | Event invoked when array changes |
-| public | method | Set(TArg\[\] items) | Set __items equals to items. OnCollectionChanged invoked |
+| public | method | Set(TArg\[\] items) | Set \_items equals to items. OnCollectionChanged invoked |
 | public | property | this\[int index\] { get; set; } | Returns value stored at array index position. On set, invokes OnCollectionChanged event |
 | public | property | Values { get; } | Return the array |
 | public | property | ValuesList { get; } | Returns a list with array values |

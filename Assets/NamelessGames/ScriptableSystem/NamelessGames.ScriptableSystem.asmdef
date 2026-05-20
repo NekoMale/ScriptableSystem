@@ -1,0 +1,16 @@
+{
+    "name": "NamelessGames.ScriptableSystem",
+    "rootNamespace": "NamelessGames.ScriptableSystem",
+    "references": [
+        "GUID:971b1ca0f67ac6349b721621a86537a9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "NamelessGames",
+    "rootNamespace": "NamelessGames",
+    "references": [
+        "GUID:5e6458b69bfc21a4b8b3f22b1d394053"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

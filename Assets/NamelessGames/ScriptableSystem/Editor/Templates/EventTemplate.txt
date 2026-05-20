@@ -1,4 +1,5 @@
+using NamelessGames.ScriptableSystem.Events;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "{VAR_TYPE_NAME} Event", menuName = "Nameless Games/Scriptable System/Events/{VAR_TYPE_NAME} Event")]
+[CreateAssetMenu(fileName = "{VAR_TYPE_NAME} Event", menuName = "Nameless Games/Scriptable System/Events/Customs/{VAR_TYPE_NAME} Event")]
 public class {VAR_TYPE_NAME}Event : BaseEvent<{VAR_TYPE}> { }

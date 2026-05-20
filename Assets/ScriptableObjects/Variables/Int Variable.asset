@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12bcc32af59d7ea459c5b2ee461f2b40, type: 3}
   m_Name: Int Variable
   m_EditorClassIdentifier: 
+  Referrals:
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 679113967
+    _gameObjectName: Paggiett
+    ComponentNames:
+    - Prova
+    Kind: 0
+    Label: 'Try.unity > Paggiett [Prova]'
+  _ngName: 
+  _ngDescription: 
   _value: 0
   _startingValue: 0
   ValueChanged: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}

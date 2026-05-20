@@ -1,4 +1,8 @@
+using NamelessGames.ScriptableSystem.Events;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "String Variable", menuName = "Nameless Games/Scriptable System/Variables/String Variable")]
-public class StringVariable : BaseVariable<string, StringEvent> { }
+namespace NamelessGames.ScriptableSystem.Variables
+{
+    [CreateAssetMenu(fileName = "String Variable", menuName = "Nameless Games/Scriptable System/Variables/String Variable")]
+    public class StringVariable : BaseVariable<string, StringEvent> { }
+}

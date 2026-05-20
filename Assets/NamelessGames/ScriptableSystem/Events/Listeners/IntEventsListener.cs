@@ -1,8 +1,7 @@
-﻿[System.Serializable]
-public class IntEventData : BaseEventData<IntEvent, int>
+﻿namespace NamelessGames.ScriptableSystem.Events
 {
-}
+    [System.Serializable]
+    public class IntEventData : BaseEventData<IntEvent, int> { }
 
-public class IntEventsListener : BaseEventsListener<IntEventData, IntEvent, int>
-{
+    public class IntEventsListener : BaseEventsListener<IntEventData, IntEvent, int> { }
 }

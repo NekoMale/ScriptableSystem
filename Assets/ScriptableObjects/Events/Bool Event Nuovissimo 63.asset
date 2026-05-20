@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1061604e6f253442ad9ada5a7e49ebb, type: 3}
   m_Name: Bool Event Nuovissimo 63
   m_EditorClassIdentifier: 
-  _listeners: []
-  _invokers: []
-  fakeArg: 0
-  _sendFakeArg: 0
+  ListenersReferrals: []
+  InvokersReferrals:
+  - GUID: 0c82975de8cc06c45aae5be56e2d8b1a
+    ContainerGUID: 
+  _fakeArg: 0

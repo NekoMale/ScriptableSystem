@@ -1,0 +1,7 @@
+﻿<Solution>
+  <Project Path="NamelessGames.ScriptableSystem.csproj" />
+  <Project Path="NamelessGames.ScriptableSystem.Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="NamelessGames.csproj" />
+  <Project Path="NamelessGames.Editor.csproj" />
+</Solution>

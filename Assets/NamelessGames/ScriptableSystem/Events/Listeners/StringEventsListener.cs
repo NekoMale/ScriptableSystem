@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿namespace NamelessGames.ScriptableSystem.Events
+{
+    [System.Serializable]
+    public class StringEventData : BaseEventData<StringEvent, string> { }
 
-[System.Serializable]
-public class StringEventData : BaseEventData<StringEvent, string> { }
-
-public class StringEventsListener : BaseEventsListener<StringEventData, StringEvent, string> { }
+    public class StringEventsListener : BaseEventsListener<StringEventData, StringEvent, string> { }
+}

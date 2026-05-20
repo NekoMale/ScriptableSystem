@@ -53,10 +53,13 @@ public class ScriptableTypeCreator : EditorWindow
         string fileDirectives = template.Split(new string[] { "namespace" }, StringSplitOptions.RemoveEmptyEntries)[0];
         string usingDirectives = FormatUsingDirectives(_usingDirectives, fileDirectives);
 
-        string newContent = usingDirectives;
-        newContent += template.Replace("{VAR_TYPE}", _varTypeName).Replace("{VAR_TYPE_NAME}", _varTypeName.Substring(0, 1).ToUpper() + _varTypeName.Substring(1));
+        string varTypeName = _varTypeName.Replace("<", "").Replace(">", "");
+        varTypeName = varTypeName.Substring(0, 1).ToUpper() + varTypeName.Substring(1);
 
-        WriteFile(Application.dataPath + "/NamelessGames/ScriptableSystem/" + folder, _varTypeName.Substring(0, 1).ToUpper() + _varTypeName.Substring(1) + scriptableType, newContent);
+        string newContent = usingDirectives;
+        newContent += template.Replace("{VAR_TYPE}", _varTypeName).Replace("{VAR_TYPE_NAME}", varTypeName);
+
+        WriteFile(Application.dataPath + "/Scripts/ScriptableSystemCustom/" + folder,  varTypeName + scriptableType, newContent);
     }
 
     private string FormatUsingDirectives(string customUsingDirectives, string fileUsingDirectives)

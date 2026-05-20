@@ -1,18 +1,32 @@
-﻿using UnityEngine;
+﻿using NamelessGames.ScriptableSystem.Events;
+using UnityEngine;
 
-[CreateAssetMenu(fileName = "Vector2 Variable", menuName = "Nameless Games/Scriptable System/Variables/Vector2 Variable")]
-public class Vector2Variable : BaseVariable<Vector2, Vector2Event>
+namespace NamelessGames.ScriptableSystem.Variables
 {
-    public float x
+    [CreateAssetMenu(fileName = "Vector2 Variable", menuName = "Nameless Games/Scriptable System/Variables/Vector2 Variable")]
+    public class Vector2Variable : BaseVariable<Vector2, Vector2Event>
     {
-        get => _value.x;
-        set => _value.x = value;
-    }
-    public float y
-    {
-        get => _value.y;
-        set => _value.y = value;
-    }
+        public float x
+        {
+            get => _value.x;
+            set
+            {
+                Vector2 vector = _value;
+                vector.x = value;
+                Value = vector;
+            }
+        }
+        public float y
+        {
+            get => _value.y;
+            set
+            {
+                Vector2 vector = _value;
+                vector.y = value;
+                Value = vector;
+            }
+        }
 
-    public static implicit operator Vector3(Vector2Variable variable) { return variable._value; }
+        public static implicit operator Vector3(Vector2Variable variable) { return variable._value; }
+    }
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="UnityEditor.UIElements.xsd" namespace="UnityEditor.UIElements" />
+  <xs:complexType name="BaseVariableFieldType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="UnityEditor.UIElements" base="q1:ObjectFieldType">
+        <xs:choice />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BaseVariableField" xmlns:q2="UnityEditor.UIElements" substitutionGroup="q2:ObjectField" type="BaseVariableFieldType" />
+</xs:schema>

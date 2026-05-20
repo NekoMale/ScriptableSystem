@@ -12,8 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4731db7715ab6c4694945ac5074c5a8, type: 3}
   m_Name: Int Event 63
   m_EditorClassIdentifier: 
-  ListenersReferrals:
-  - GUID: 1977864020
-    ContainerGUID: fba11a98c1dc43d4ca9e4875e5026429
-  InvokersReferrals: []
+  Referrals:
+  - ContainerGUID: 8b0d1bcc7a1542e4c8254ab340a2e02d
+    ContainerName: GameObject.prefab
+    GameObjectFileID: 4358242571939894330
+    _gameObjectName: GameObject
+    ComponentNames:
+    - Component
+    Kind: 1
+    Label: 'GameObject.prefab > GameObject [Component]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 679113967
+    _gameObjectName: Paggiett
+    ComponentNames:
+    - Prova
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett [Prova, IntEventsListener]'
+  - ContainerGUID: fba11a98c1dc43d4ca9e4875e5026429
+    ContainerName: Try2.unity
+    GameObjectFileID: 1977864020
+    _gameObjectName: GameObject
+    ComponentNames:
+    - Component
+    Kind: 0
+    Label: 'Try2.unity > GameObject [Component]'
+  _ngName: 
+  _ngDescription: 
   _fakeArg: 4

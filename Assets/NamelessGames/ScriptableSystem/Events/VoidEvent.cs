@@ -1,7 +1,26 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "Void Event", menuName = "Nameless Games/Scriptable System/Events/Void Event", order = 0)]
-public class VoidEvent : BaseEvent<VoidArg>
+namespace NamelessGames.ScriptableSystem.Events
 {
-    public void Invoke() => Invoke(VoidArg.Empty);
+    [CreateAssetMenu(fileName = "Void Event", menuName = "Nameless Games/Scriptable System/Events/Void Event", order = 0)]
+    public class VoidEvent : BaseEvent<VoidArg>
+    {
+        event System.Action OnVoidEvent;
+
+        public void AddListener(System.Action listener)
+        {
+            OnVoidEvent += listener;
+        }
+
+        public void Invoke()
+        {
+            OnVoidEvent?.Invoke();
+            Invoke(VoidArg.Empty);
+        }
+
+        public void RemoveListener(System.Action listener)
+        {
+            OnVoidEvent -= listener;
+        }
+    }
 }

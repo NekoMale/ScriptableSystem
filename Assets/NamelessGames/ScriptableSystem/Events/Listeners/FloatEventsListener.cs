@@ -1,4 +1,7 @@
-[System.Serializable]
-public class FloatEventData : BaseEventData<FloatEvent, float> { }
+namespace NamelessGames.ScriptableSystem.Events
+{
+    [System.Serializable]
+    public class FloatEventData : BaseEventData<FloatEvent, float> { }
 
-public class FloatEventsListener : BaseEventsListener<FloatEventData, FloatEvent, float> { }
+    public class FloatEventsListener : BaseEventsListener<FloatEventData, FloatEvent, float> { }
+}

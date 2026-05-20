@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -38,13 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -67,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 0
@@ -159,7 +155,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.19206122, g: 0.30814636, b: 0.49056602, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -224,7 +220,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 679113969}
-  - component: {fileID: 679113968}
+  - component: {fileID: 679113970}
+  - component: {fileID: 679113971}
   m_Layer: 0
   m_Name: Paggiett
   m_TagString: Untagged
@@ -232,25 +229,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &679113968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679113967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _baseEventsDatas:
-  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
-    SubscribeOnEnable: 0
-    UnsubscribeOnDisable: 0
-    Response:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!4 &679113969
 Transform:
   m_ObjectHideFlags: 0
@@ -266,6 +244,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &679113970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679113967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+--- !u!114 &679113971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679113967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &962636810
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,8 +294,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 962636812}
-  - component: {fileID: 962636813}
-  - component: {fileID: 962636811}
   m_Layer: 0
   m_Name: Caruso
   m_TagString: Untagged
@@ -284,25 +301,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &962636811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962636810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _baseEventsDatas:
-  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
-    SubscribeOnEnable: 0
-    UnsubscribeOnDisable: 0
-    Response:
-      m_PersistentCalls:
-        m_Calls: []
 --- !u!4 &962636812
 Transform:
   m_ObjectHideFlags: 0
@@ -318,19 +316,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &962636813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962636810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84b107c48987f27438cb72a86890c24f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _color: {r: 0.69803923, g: 1, b: 0.6, a: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,3 +1,5 @@
+using NamelessGames.ScriptableSystem.Events;
+
 [System.Serializable]
 public class {VAR_TYPE_NAME}EventData : BaseEventData<{VAR_TYPE_NAME}Event, {VAR_TYPE}> { }
 

@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿using NamelessGames.ScriptableSystem.Events;
+using UnityEngine;
 
-[CreateAssetMenu(fileName = "GameObject Variable", menuName = "Nameless Games/Scriptable System/Variables/GameObject Variable")]
-public class GameObjectVariable : BaseVariable<GameObject, GameObjectEvent> { }
+namespace NamelessGames.ScriptableSystem.Variables
+{
+    [CreateAssetMenu(fileName = "GameObject Variable", menuName = "Nameless Games/Scriptable System/Variables/GameObject Variable")]
+    public class GameObjectVariable : BaseVariable<GameObject, GameObjectEvent> { }
+}

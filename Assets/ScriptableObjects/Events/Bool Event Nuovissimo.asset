@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1061604e6f253442ad9ada5a7e49ebb, type: 3}
   m_Name: Bool Event Nuovissimo
   m_EditorClassIdentifier: 
-  _listeners: []
-  _invokers: []
-  fakeArg: 0
-  _sendFakeArg: 0
+  Referrals:
+  - ContainerGUID: 1c52b2d529670054da66e76e05e72230
+    ContainerName: Bool Variable 1
+    GameObjectFileID: 
+    _gameObjectName: 
+    ComponentNames: []
+    Kind: 2
+    Label: Bool Variable 1
+  _fakeArg: 0

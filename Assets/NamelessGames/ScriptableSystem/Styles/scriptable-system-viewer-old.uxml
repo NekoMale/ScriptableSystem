@@ -1,0 +1,26 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-viewer.uss?fileID=7433441132597879392&amp;guid=117948c8f3f2263488c69994daefa2c4&amp;type=3#scriptable-system-viewer"/>
+    <ui:VisualElement name="scriptable-system-viewer-container" style="flex-grow: 1;">
+        <ui:TabView name="scriptable-system-tab-view">
+            <ui:Tab label="Variables" name="variables-viewer-tab">
+                <ui:VisualElement name="variables-viewer-container" class="scriptable-system-type-viewer-container" style="flex-grow: 1;">
+                    <ui:ScrollView name="existing-variables-scroll-view" class="scriptable-system-exising-items-scroll-view"/>
+                    <ui:VisualElement name="variable-details-container" style="flex-grow: 1;">
+                        <ui:VisualElement name="header" class="scriptable-detail-header" style="flex-grow: 1;">
+                            <ui:Label text="Int Variable Name"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="variable-datas-contaienr" class="scriptable-system-datas-container" style="flex-grow: 1;">
+                            <uie:PropertyField label="Starting Value" binding-path="_startingValue"/>
+                            <uie:PropertyField label="Current Value" binding-path="_value"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Tab>
+            <ui:Tab label="Events" name="events-viewer-tab" tabindex="1"/>
+            <ui:Tab label="Arrays" name="arrays-viewer-tab" tabindex="2"/>
+            <ui:Tab label="Lists" name="lists-viewer-tab" tabindex="3"/>
+            <ui:Tab label="Hashsets" name="hashsets-viewer-tab" tabindex="4"/>
+            <ui:Tab label="Dictionaries" name="dictionaries-viewer-tab" tabindex="5"/>
+        </ui:TabView>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting.YamlDotNet.Core.Tokens;
+using UnityEngine;
 
 namespace NamelessGames.ScriptableSystem.Events
 {
@@ -14,8 +15,13 @@ namespace NamelessGames.ScriptableSystem.Events
 
         public void Invoke()
         {
-            OnVoidEvent?.Invoke();
             Invoke(VoidArg.Empty);
+        }
+
+        public new void Invoke(VoidArg arg)
+        {
+            OnVoidEvent?.Invoke();
+            base.Invoke(arg);
         }
 
         public void RemoveListener(System.Action listener)

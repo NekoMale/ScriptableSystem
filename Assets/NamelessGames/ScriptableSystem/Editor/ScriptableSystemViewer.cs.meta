@@ -6,6 +6,8 @@ MonoImporter:
   defaultReferences:
   - m_ViewDataDictionary: {instanceID: 0}
   - _toolTemplate: {fileID: 9197481963319205126, guid: 5e945f545a747d5438d50c1072099cd0, type: 3}
+  - _eventItemTemplate: {fileID: 9197481963319205126, guid: 82c56a24a80a08d40aea53cef5cdc680, type: 3}
+  - _eventReferralItemTemplate: {fileID: 9197481963319205126, guid: 496c0370971376a4dba046bf9741c233, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

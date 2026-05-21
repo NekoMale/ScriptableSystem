@@ -2,7 +2,7 @@
 
 namespace NamelessGames.ScriptableSystem.Events
 {
-    public abstract class BaseEvent : NGScriptableObject { }
+    public abstract class BaseEvent : NGScriptableObject { public abstract void SendFakeArg(); }
 
     public abstract class BaseEvent<TArg> : BaseEvent
     {
@@ -12,7 +12,7 @@ namespace NamelessGames.ScriptableSystem.Events
 
 #if UNITY_EDITOR
         [SerializeField] TArg _fakeArg;
-        public void SendFakeArg() => Invoke(_fakeArg);
+        public sealed override void SendFakeArg() => Invoke(_fakeArg);
 #endif
 
         // TODO: Controllare se serve che metta tutto a default o meno

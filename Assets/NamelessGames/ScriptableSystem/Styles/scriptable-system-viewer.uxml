@@ -1,26 +1,199 @@
-<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="True">
+
     <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-viewer.uss?fileID=7433441132597879392&amp;guid=117948c8f3f2263488c69994daefa2c4&amp;type=3#scriptable-system-viewer"/>
-    <ui:VisualElement name="scriptable-system-viewer-container" style="flex-grow: 1;">
-        <ui:TabView name="scriptable-system-tab-view">
+
+    <ui:VisualElement name="scriptable-system-viewer-container" class="ssv-root">
+
+        <ui:TabView name="scriptable-system-tab-view" class="ssv-tab-view">
+
+            <!-- ═══════════════════════ VARIABLES ═══════════════════════ -->
             <ui:Tab label="Variables" name="variables-viewer-tab">
-                <ui:VisualElement name="variables-viewer-container" class="scriptable-system-type-viewer-container" style="flex-grow: 1;">
-                    <ui:ScrollView name="existing-variables-scroll-view" class="scriptable-system-exising-items-scroll-view"/>
-                    <ui:VisualElement name="variable-details-container" style="flex-grow: 1;">
-                        <ui:VisualElement name="header" class="scriptable-detail-header" style="flex-grow: 1;">
-                            <ui:Label text="Int Variable Name"/>
+                <ui:VisualElement class="ssv-tab-body">
+
+                    <!-- Left: asset list -->
+                    <ui:ScrollView name="existing-items-scroll-view" class="ssv-list-scroll"/>
+
+                    <!-- Right: detail panel (hidden until selection) -->
+                    <ui:VisualElement name="detail-panel" class="ssv-detail-panel" style="display: none;">
+
+                        <ui:VisualElement class="ssv-detail-header">
+                            <ui:VisualElement class="ssv-detail-header-text">
+                                <ui:Label name="detail-name-label"  class="ssv-detail-name"/>
+                                <ui:Label name="detail-type-label"  class="ssv-detail-type"/>
+                                <ui:Label name="detail-ng-name-label"  class="ssv-detail-ng-name" style="display:none;"/>
+                                <ui:Label name="detail-ng-desc-label"  class="ssv-detail-ng-desc" style="display:none;"/>
+                            </ui:VisualElement>
+                            <ui:Button name="detail-ping-asset-button" text="⦿ Ping" class="ssv-ping-btn"/>
                         </ui:VisualElement>
-                        <ui:VisualElement name="variable-datas-contaienr" class="scriptable-system-datas-contaienr" style="flex-grow: 1;">
-                            <uie:PropertyField label="Starting Value"/>
-                            <uie:PropertyField label="Current Value"/>
+
+                        <!-- Variable values -->
+                        <ui:VisualElement name="variable-values-panel" class="ssv-section">
+                            <ui:Label text="Values" class="ssv-section-label"/>
+                            <ui:VisualElement class="ssv-value-row">
+                                <ui:VisualElement class="ssv-value-cell ssv-value-cell--start">
+                                    <ui:Label text="Starting value" class="ssv-value-cell-label"/>
+                                    <uie:PropertyField name="detail-starting-value" label=""/>
+                                </ui:VisualElement>
+                                <ui:VisualElement class="ssv-value-cell ssv-value-cell--current">
+                                    <ui:Label text="Current value" class="ssv-value-cell-label"/>
+                                    <uie:PropertyField name="detail-current-value" label=""/>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:Label text="On Value Changed" class="ssv-section-label" style="margin-top:8px;"/>
+                            <uie:PropertyField name="detail-value-changed-event" label=""/>
                         </ui:VisualElement>
+
+                        <!-- Referrals -->
+                        <ui:VisualElement class="ssv-section ssv-section--grow">
+                            <ui:Label text="Referrals" class="ssv-section-label"/>
+                            <ui:ListView name="detail-referrals-list-view"
+                                         show-bound-collection-size="false"
+                                         show-alternating-row-backgrounds="ContentOnly"
+                                         virtualization-method="DynamicHeight"
+                                         binding-source-selection-mode="Manual"/>
+                        </ui:VisualElement>
+
+                        <!-- Panels not relevant for Variables (hidden) -->
+                        <ui:VisualElement name="event-raise-panel"      style="display:none;"/>
+                        <ui:VisualElement name="collection-values-panel" style="display:none;"/>
+
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:Tab>
-            <ui:Tab label="Events" name="events-viewer-tab" tabindex="1"/>
-            <ui:Tab label="Arrays" name="arrays-viewer-tab" tabindex="2"/>
-            <ui:Tab label="Lists" name="lists-viewer-tab" tabindex="3"/>
-            <ui:Tab label="Hashsets" name="hashsets-viewer-tab" tabindex="4"/>
-            <ui:Tab label="Dictionaries" name="dictionaries-viewer-tab" tabindex="5"/>
+
+            <!-- ═══════════════════════ EVENTS ══════════════════════════ -->
+            <ui:Tab label="Events" name="events-viewer-tab">
+                <ui:VisualElement class="ssv-tab-body">
+
+                    <ui:ScrollView name="existing-items-scroll-view" class="ssv-list-scroll"/>
+
+                    <ui:VisualElement name="detail-panel" class="ssv-detail-panel" style="display: none;">
+
+                        <ui:VisualElement class="ssv-detail-header">
+                            <ui:VisualElement class="ssv-detail-header-text">
+                                <ui:Label name="detail-name-label" class="ssv-detail-name"/>
+                                <ui:Label name="detail-type-label" class="ssv-detail-type"/>
+                                <ui:Label name="detail-ng-name-label"  class="ssv-detail-ng-name" style="display:none;"/>
+                                <ui:Label name="detail-ng-desc-label"  class="ssv-detail-ng-desc" style="display:none;"/>
+                            </ui:VisualElement>
+                            <ui:Button name="detail-ping-asset-button" text="⦿ Ping" class="ssv-ping-btn"/>
+                        </ui:VisualElement>
+
+                        <!-- Raise panel -->
+                        <ui:VisualElement name="event-raise-panel" class="ssv-section">
+                            <ui:Label text="Raise" class="ssv-section-label"/>
+                            <ui:VisualElement class="ssv-raise-row">
+                                <uie:PropertyField name="detail-fake-arg" label="Fake arg"/>
+                                <ui:Button name="detail-raise-button" text="▶ Raise" class="ssv-raise-btn"/>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="ssv-section ssv-section--grow">
+                            <ui:Label text="Referrals" class="ssv-section-label"/>
+                            <ui:ListView name="detail-referrals-list-view"
+                                         show-bound-collection-size="false"
+                                         show-alternating-row-backgrounds="ContentOnly"
+                                         virtualization-method="DynamicHeight"
+                                         binding-source-selection-mode="Manual"/>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="variable-values-panel"   style="display:none;"/>
+                        <ui:VisualElement name="collection-values-panel" style="display:none;"/>
+
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Tab>
+
+            <!-- ═══════════════════════ ARRAYS ══════════════════════════ -->
+            <ui:Tab label="Arrays" name="arrays-viewer-tab">
+                <ui:VisualElement class="ssv-tab-body">
+
+                    <ui:ScrollView name="existing-items-scroll-view" class="ssv-list-scroll"/>
+
+                    <ui:VisualElement name="detail-panel" class="ssv-detail-panel" style="display: none;">
+
+                        <ui:VisualElement class="ssv-detail-header">
+                            <ui:VisualElement class="ssv-detail-header-text">
+                                <ui:Label name="detail-name-label" class="ssv-detail-name"/>
+                                <ui:Label name="detail-type-label" class="ssv-detail-type"/>
+                                <ui:Label name="detail-ng-name-label"  class="ssv-detail-ng-name" style="display:none;"/>
+                                <ui:Label name="detail-ng-desc-label"  class="ssv-detail-ng-desc" style="display:none;"/>
+                            </ui:VisualElement>
+                            <ui:Button name="detail-ping-asset-button" text="⦿ Ping" class="ssv-ping-btn"/>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="collection-values-panel" class="ssv-section">
+                            <ui:Label text="Starting items" class="ssv-section-label"/>
+                            <uie:PropertyField name="detail-starting-items" label=""/>
+                            <ui:Label text="Current items" class="ssv-section-label" style="margin-top:8px;"/>
+                            <uie:PropertyField name="detail-current-items" label=""/>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="ssv-section ssv-section--grow">
+                            <ui:Label text="Referrals" class="ssv-section-label"/>
+                            <ui:ListView name="detail-referrals-list-view"
+                                         show-bound-collection-size="false"
+                                         show-alternating-row-backgrounds="ContentOnly"
+                                         virtualization-method="DynamicHeight"
+                                         binding-source-selection-mode="Manual"/>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="variable-values-panel" style="display:none;"/>
+                        <ui:VisualElement name="event-raise-panel"     style="display:none;"/>
+
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Tab>
+
+            <!-- ═══════════════════════ LISTS ═══════════════════════════ -->
+            <ui:Tab label="Lists" name="lists-viewer-tab">
+                <ui:VisualElement class="ssv-tab-body">
+
+                    <ui:ScrollView name="existing-items-scroll-view" class="ssv-list-scroll"/>
+
+                    <ui:VisualElement name="detail-panel" class="ssv-detail-panel" style="display: none;">
+
+                        <ui:VisualElement class="ssv-detail-header">
+                            <ui:VisualElement class="ssv-detail-header-text">
+                                <ui:Label name="detail-name-label" class="ssv-detail-name"/>
+                                <ui:Label name="detail-type-label" class="ssv-detail-type"/>
+                                <ui:Label name="detail-ng-name-label"  class="ssv-detail-ng-name" style="display:none;"/>
+                                <ui:Label name="detail-ng-desc-label"  class="ssv-detail-ng-desc" style="display:none;"/>
+                            </ui:VisualElement>
+                            <ui:Button name="detail-ping-asset-button" text="⦿ Ping" class="ssv-ping-btn"/>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="collection-values-panel" class="ssv-section">
+                            <ui:Label text="Starting items" class="ssv-section-label"/>
+                            <uie:PropertyField name="detail-starting-items" label=""/>
+                            <ui:Label text="Current items" class="ssv-section-label" style="margin-top:8px;"/>
+                            <uie:PropertyField name="detail-current-items" label=""/>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="ssv-section ssv-section--grow">
+                            <ui:Label text="Referrals" class="ssv-section-label"/>
+                            <ui:ListView name="detail-referrals-list-view"
+                                         show-bound-collection-size="false"
+                                         show-alternating-row-backgrounds="ContentOnly"
+                                         virtualization-method="DynamicHeight"
+                                         binding-source-selection-mode="Manual"/>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="variable-values-panel" style="display:none;"/>
+                        <ui:VisualElement name="event-raise-panel"     style="display:none;"/>
+
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Tab>
+
+            <!-- ════════════ HASHSETS / DICTIONARIES (placeholder) ══════ -->
+            <ui:Tab label="Hashsets"    name="hashsets-viewer-tab"/>
+            <ui:Tab label="Dictionaries" name="dictionaries-viewer-tab"/>
+
         </ui:TabView>
     </ui:VisualElement>
 </ui:UXML>

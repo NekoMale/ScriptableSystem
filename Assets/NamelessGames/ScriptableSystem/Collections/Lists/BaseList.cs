@@ -4,7 +4,9 @@ using UnityEngine;
 
 namespace NamelessGames.ScriptableSystem.Collections
 {
-    public abstract class BaseList<TArg> : NGScriptableObject
+    public abstract class BaseList : NGScriptableObject { }
+
+    public abstract class BaseList<TArg> : BaseList
     {
         [SerializeField] protected List<TArg> _items = new List<TArg>();
         [SerializeField] TArg[] _startingItems;
@@ -18,7 +20,7 @@ namespace NamelessGames.ScriptableSystem.Collections
             {
                 _items.Add(_startingItems[itemIndex]);
             }
-            OnCollectionChanged?.Invoke(VoidArg.Empty);
+            OnCollectionChanged?.Invoke();
         }
 
         public TArg this[int index]
@@ -27,7 +29,7 @@ namespace NamelessGames.ScriptableSystem.Collections
             set
             {
                 _items[index] = value;
-                OnCollectionChanged?.Invoke(VoidArg.Empty);
+                OnCollectionChanged?.Invoke();
             }
         }
 
@@ -39,7 +41,7 @@ namespace NamelessGames.ScriptableSystem.Collections
         public void Add(TArg item)
         {
             _items.Add(item);
-            OnCollectionChanged?.Invoke(VoidArg.Empty);
+            OnCollectionChanged?.Invoke();
         }
 
         public void Insert(TArg item, int index) => AddAt(item, index);
@@ -47,31 +49,31 @@ namespace NamelessGames.ScriptableSystem.Collections
         public void AddAt(TArg item, int index)
         {
             _items.Insert(index, item);
-            OnCollectionChanged?.Invoke(VoidArg.Empty);
+            OnCollectionChanged?.Invoke();
         }
 
         public void AddRange(IEnumerable<TArg> items)
         {
             _items.AddRange(items);
-            OnCollectionChanged?.Invoke(VoidArg.Empty);
+            OnCollectionChanged?.Invoke();
         }
 
         public void Remove(TArg item)
         {
             _items.Remove(item);
-            OnCollectionChanged?.Invoke(VoidArg.Empty);
+            OnCollectionChanged?.Invoke();
         }
 
         public void RemoveAt(int index)
         {
             _items.RemoveAt(index);
-            OnCollectionChanged?.Invoke(VoidArg.Empty);
+            OnCollectionChanged?.Invoke();
         }
 
         public void Clear()
         {
             _items.Clear();
-            OnCollectionChanged?.Invoke(VoidArg.Empty);
+            OnCollectionChanged?.Invoke();
         }
 
         public bool Contains(TArg item) => _items.Contains(item);

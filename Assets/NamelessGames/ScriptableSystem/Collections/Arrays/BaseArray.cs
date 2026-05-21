@@ -5,7 +5,9 @@ using UnityEngine;
 
 namespace NamelessGames.ScriptableSystem.Collections
 {
-    public abstract class BaseArray<TArg> : NGScriptableObject
+    public abstract class BaseArray : NGScriptableObject { }
+
+    public abstract class BaseArray<TArg> : BaseArray
     {
         [SerializeField] protected TArg[] _items = new TArg[0];
         [SerializeField] TArg[] _startingItems;
@@ -19,13 +21,13 @@ namespace NamelessGames.ScriptableSystem.Collections
             {
                 _items[itemIndex] = _startingItems[itemIndex];
             }
-            OnCollectionChanged?.Invoke(VoidArg.Empty);
+            OnCollectionChanged?.Invoke();
         }
 
         public void Set(TArg[] items)
         {
             _items = items;
-            OnCollectionChanged?.Invoke(VoidArg.Empty);
+            OnCollectionChanged?.Invoke();
         }
 
         public TArg this[int index]
@@ -34,7 +36,7 @@ namespace NamelessGames.ScriptableSystem.Collections
             set
             {
                 _items[index] = value;
-                OnCollectionChanged?.Invoke(VoidArg.Empty);
+                OnCollectionChanged?.Invoke();
             }
         }
 

@@ -1,0 +1,42 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="scriptable-system-selected-item-header" src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/Details/scriptable-system-selected-item-header.uxml?fileID=9197481963319205126&amp;guid=ff139582b8a0c6f40ad1a92c42042207&amp;type=3#scriptable-system-selected-item-header"/>
+    <ui:Template name="scriptable-system-selected-item-ng-description-container" src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/Details/scriptable-system-selected-item-ng-description-container.uxml?fileID=9197481963319205126&amp;guid=6f39bbab90db4ea4bb0dc471f6509657&amp;type=3#scriptable-system-selected-item-ng-description-container"/>
+    <ui:Template name="scriptable-system-viewer-referral-list-view" src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/scriptable-system-viewer-referral-list-view.uxml?fileID=9197481963319205126&amp;guid=d104cbb34fdcf844ab2433c30c7d56ef&amp;type=3#scriptable-system-viewer-referral-list-view"/>
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-viewer-selected-ngscriptable-object-detail.uss?fileID=7433441132597879392&amp;guid=16a7473c40a1388448b8726226bb9e5f&amp;type=3#scriptable-system-viewer-selected-ngscriptable-object-detail"/>
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-viewer-selected-variable-detail.uss?fileID=7433441132597879392&amp;guid=72f0ec93ba0c3894792ab71c0d49dd44&amp;type=3#scriptable-system-viewer-selected-variable-detail"/>
+    <ui:Instance template="scriptable-system-selected-item-header" class="ssv-selected-item-detail-header"/>
+    <ui:TabView name="selected-item-detail-tab-view" class="ssv-selected-item-detail-tab-view">
+        <ui:Tab label="Overview" name="selected-item-overview-tab" class="ssv-selected-item-detail-tab">
+            <ui:VisualElement name="selected-variable-details-container" style="flex-grow: 1;">
+                <ui:Instance template="scriptable-system-selected-item-ng-description-container"/>
+                <ui:VisualElement name="selected-item-half-column-properties-container">
+                    <ui:Label text="VALUES" name="selected-item-values-label" class="ssv-selected-item-detail-label"/>
+                    <ui:VisualElement name="selected-variable-values-properties-container" class="ng-horizontal-children ssv-selected-item-ng-description-text-field ssv-half-column-properties-container">
+                        <uie:PropertyField name="selected-variable-starting-value-property" binding-path="_startingValue" class="ssv-selected-item-property ssv-selected-item-property-half-column"/>
+                        <uie:PropertyField name="selected-variable-current-value-property" binding-path="_value" class="ssv-selected-item-property ssv-selected-item-property-half-column"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="selected-variable-linked-events-container" class="ng-grow">
+                    <ui:Label text="LINKED EVENTS" name="selected-variable-linked-events-label" class="ssv-selected-item-detail-label"/>
+                    <ui:VisualElement name="selected-variable-on-value-change-event-container" class="ssv-event-container">
+                        <ui:Label text="On Value Change" name="selected-variable-change-event-label" class="ssv-selected-variable-event-label ng-bold-text"/>
+                        <ui:VisualElement name="selected-variable-change-event-assigned" class="ssv-selected-variable-change-event-assigned ng-horizontal-children" style="-unity-text-align: middle-left;">
+                            <ui:Button text="[E]" name="edit-button"/>
+                            <ui:Label text="Event Name" name="event-name-label" binding-path="m_Name" class="ng-bold-text"/>
+                            <ui:Label text="(Event Type)" name="event-type-label" class="ng-small-text ng-grow"/>
+                            <ui:VisualElement name="event-last-arg-container" class="ng-horizontal-children" style="flex-grow: 1;">
+                                <ui:Label text="last:" name="event-last-arg-label" class="ng-small-text ng-grow" style="-unity-text-align: middle-right;"/>
+                                <ui:Label text="arg" name="event-last-arg-text" binding-path="_lastMessage" class="ng-small-text" style="-unity-text-align: middle-right;"/>
+                            </ui:VisualElement>
+                            <ui:Button text="Raise" tooltip="Raise event with current value"/>
+                        </ui:VisualElement>
+                        <uie:PropertyField name="selected-variable-empty-event-property" binding-path="ValueChanged"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:Tab>
+        <ui:Tab label="Referrals" name="selected-item-referral-tab" tabindex="0" class="ssv-selected-item-detail-tab">
+            <ui:Instance template="scriptable-system-viewer-referral-list-view" name="scriptable-system-viewer-referral-list-view"/>
+        </ui:Tab>
+    </ui:TabView>
+</ui:UXML>

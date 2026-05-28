@@ -6,14 +6,13 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-
 namespace NamelessGames.ScriptableSystem.ScriptableSystemEditor
 {
     [CustomEditor(typeof(BaseEventsListener), true)]
-    public class BaseEventsListenerInspector : Editor
+    class BaseEventsListenerInspector : Editor
     {
         [SerializeField] VisualTreeAsset _inspectorTemplate;
-        [SerializeField] VisualTreeAsset _drawerTemplate;
+        [SerializeField] VisualTreeAsset _eventDataTemplate;
 
         SerializedProperty _eventsDatas;
         VisualElement _root;
@@ -23,113 +22,77 @@ namespace NamelessGames.ScriptableSystem.ScriptableSystemEditor
             _root = _inspectorTemplate.CloneTree();
             _eventsDatas = serializedObject.FindProperty("_baseEventsDatas");
 
+            _root.Q<ListView>().bindItem += BindItem;
+            _root.Q<ListView>().Q<Button>("unity-list-view__add-button").text = "+ Add Event";
 
-            if (_eventsDatas.arraySize == 0)
-            {
-                CreateEmptyGUI();
-            }
-            else
-            {
-                CreatePopulatedGUI();
-            }
-
-            _root.Q<ListView>().bindItem += ElementBinded;
-            _root.Q<ListView>().BindProperty(_eventsDatas);
-
-            _root.Q<Button>("add-event-button").clicked += AddNewEvent;
             return _root;
         }
 
-        private void CreateEmptyGUI()
+        private void BindItem(VisualElement element, int index)
         {
-            _root.Q<VisualElement>("empty-events-container").style.display = DisplayStyle.Flex;
-            _root.Q<VisualElement>("populated-events-container").style.display = DisplayStyle.None;
+            SerializedProperty eventData = _eventsDatas.GetArrayElementAtIndex(index);
+            SerializedProperty eventElement = eventData.FindPropertyRelative("Event");
+
+            element.Q<Foldout>("event-data-item").userData = index;
+            element.Q<Foldout>("event-data-item").value = eventData.isExpanded;
+            element.Q<Foldout>("event-data-item").RegisterValueChangedCallback(ChangeIsExpanded);
+            
+            Toggle headerToggle = element.Q<Toggle>();
+
+            ChangeElementName(headerToggle.Q<Label>(), eventElement);
+
+            Button removeButton = new Button();
+            removeButton.AddToClassList("event-data-remove-button");
+            removeButton.Add(new VisualElement());
+            headerToggle.Add(removeButton);
+            removeButton.RegisterCallback<ClickEvent>(RemoveEventData);
+
+
+            element.Q<PropertyField>("event-property-field").BindProperty(eventData.FindPropertyRelative("Event"));
+            element.Q<PropertyField>("event-property-field").RegisterValueChangeCallback(ChangeElementName);
+
+            element.Q<Toggle>("subscribe-slide-toggle-field").BindProperty(eventData.FindPropertyRelative("SubscribeOnEnable"));
+            element.Q<Toggle>("unsubscribe-slide-toggle-field").BindProperty(eventData.FindPropertyRelative("UnsubscribeOnDisable"));
+            element.Q<Toggle>("ask-last-event-slide-toggle-field").BindProperty(eventData.FindPropertyRelative("AskLastEventOnSubscribe"));
+            
+            element.Q<PropertyField>("response-property-field").BindProperty(eventData.FindPropertyRelative("Response"));
         }
 
-        private void CreatePopulatedGUI()
+        private void RemoveEventData(ClickEvent evt)
         {
-            _root.Q<VisualElement>("empty-events-container").style.display = DisplayStyle.None;
-            _root.Q<VisualElement>("populated-events-container").style.display = DisplayStyle.Flex;
+            Foldout foldout = (evt.target as VisualElement).parent.parent as Foldout;
+            int indexToRemove = (int)foldout.userData;
 
-            _root.Q<Button>("show-events-button").clicked += () =>
-            {
-                _eventsDatas.isExpanded = !_eventsDatas.isExpanded;
-                ShowEvents();
-            };
-
-            ShowEvents();
-        }
-
-        private void ShowEvents()
-        {
-            _root.Q<Button>("show-events-button").text = _eventsDatas.isExpanded ? "Hide" : "Show";
-            _root.Q<ListView>().style.display = _eventsDatas.isExpanded ? DisplayStyle.Flex : DisplayStyle.None;
-        }
-
-        private void AddNewEvent()
-        {
-            if (_eventsDatas.arraySize == 0)
-            {
-                CreatePopulatedGUI();
-            }
-
-            _eventsDatas.InsertArrayElementAtIndex(_eventsDatas.arraySize);
+            _eventsDatas.DeleteArrayElementAtIndex(indexToRemove);
             serializedObject.ApplyModifiedProperties();
         }
 
-        Dictionary<VisualElement, Action[]> _lambdas = new();
-        private void ElementBinded(VisualElement element, int arrayIndex)
+        private void ChangeElementName(SerializedPropertyChangeEvent evt)
         {
-            SerializedProperty eventDatas = _eventsDatas.GetArrayElementAtIndex(arrayIndex);
-
-            element.Q<PropertyField>().BindProperty(eventDatas.FindPropertyRelative("Event"));
-            element.Q<Toggle>("on-enable-field").BindProperty(eventDatas.FindPropertyRelative("SubscribeOnEnable"));
-            element.Q<Toggle>("on-disable-field").BindProperty(eventDatas.FindPropertyRelative("UnsubscribeOnDisable"));
-            element.Q<Toggle>("ask-last-event-field").BindProperty(eventDatas.FindPropertyRelative("AskLastEventOnSubscribe"));
-
-            if (_lambdas.TryGetValue(element, out Action[] lambdas))
-            {
-                element.Q<Button>("event-details-button").clicked -= lambdas[0];
-                element.Q<Button>("remove-event-button").clicked -= lambdas[1];
-            }
-            else
-            {
-                lambdas = new Action[2];
-            }
-
-            lambdas[0] = () =>
-            {
-                eventDatas.isExpanded = !eventDatas.isExpanded;
-                ShowEventDetails(element, eventDatas.isExpanded);
-            };
-            element.Q<Button>("event-details-button").clicked += lambdas[0];
-
-            lambdas[1] = () => RemoveEventListened(arrayIndex);
-            element.Q<Button>("remove-event-button").clicked += lambdas[1];
-
-            _lambdas[element] = lambdas;
-
-            element.Q<PropertyField>("event-responses-field").BindProperty(eventDatas.FindPropertyRelative("Response"));
-
-            ShowEventDetails(element, eventDatas.isExpanded);
+            Foldout foldout = (evt.target as VisualElement).parent as Foldout;
+            ChangeElementName(foldout.Q<Toggle>().Q<Label>(), evt.changedProperty);
         }
 
-        private void ShowEventDetails(VisualElement element, bool isExpanded)
+        private void ChangeElementName(Label label, SerializedProperty property)
         {
-            element.Q<VisualElement>("event-listener-mode-container").style.display = isExpanded ? DisplayStyle.None : DisplayStyle.Flex;
-        }
-
-        private void RemoveEventListened(int arrayIndex)
-        {
-            SerializedProperty serializedEvent = _eventsDatas.GetArrayElementAtIndex(arrayIndex).FindPropertyRelative("Event");
-
-            if (serializedEvent.objectReferenceValue != null)
+            if (property.objectReferenceValue == null)
             {
-                //(serializedEvent.objectReferenceValue as BaseEvent).RemoveReferral(serializedObject.targetObject);
+                label.text = "No event assigned";
+                return;
             }
 
-            _eventsDatas.DeleteArrayElementAtIndex(arrayIndex);
-            serializedObject.ApplyModifiedProperties();
+            label.BindProperty(new SerializedObject(property.objectReferenceValue).FindProperty("m_Name"));
+        }
+
+        private void ChangeIsExpanded(ChangeEvent<bool> evt)
+        {
+            Foldout foldout = evt.target as Foldout;
+            
+            if (foldout == null) return;
+            
+            SerializedProperty eventData = _eventsDatas.GetArrayElementAtIndex((int)foldout.userData);
+
+            eventData.isExpanded = evt.newValue;
         }
     }
 }

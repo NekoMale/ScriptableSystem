@@ -1,0 +1,14 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Editor/Inspectors/Styles/CSS/base-event-data-item.uss?fileID=7433441132597879392&amp;guid=4711176835e8fa04281a10eb5711a515&amp;type=3#base-event-data-item"/>
+    <ui:VisualElement name="event-data-item-container" class="event-data-item-container" style="flex-grow: 1;">
+        <ui:Foldout name="event-data-item" value="true" text="EventName" class="event-data-item">
+            <uie:PropertyField binding-path="Event" name="event-property-field"/>
+            <ui:VisualElement name="event-slide-toggles-container" class="toggles-container" style="flex-grow: 1;">
+                <ui:Toggle binding-path="SubscribeOnEnable" label="Subscribe On Enable" name="subscribe-slide-toggle-field" class="slide-toggle-field slide-toggle-on"/>
+                <ui:Toggle binding-path="UnsubscribeOnDisable" label="Unsubscribe On Disable" name="unsubscribe-slide-toggle-field" class="slide-toggle-field slide-toggle-on"/>
+                <ui:Toggle binding-path="AskLastEventOnSubscribe" label="Ask Last Event On Subscribe" name="ask-last-event-slide-toggle-field" class="slide-toggle-field slide-toggle-on"/>
+            </ui:VisualElement>
+            <uie:PropertyField binding-path="Response" name="response-property-field"/>
+        </ui:Foldout>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,17 @@
+
+
+.ng-grow {
+    flex-grow: 1;
+}
+
+.ng-horizontal-children {
+    flex-direction: row;
+}
+
+.ng-small-text {
+    font-size: 10px;
+}
+
+.ng-bold-text {
+    -unity-font-style: bold;
+}

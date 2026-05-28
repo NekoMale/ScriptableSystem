@@ -1,0 +1,26 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-viewer-v2.uss?fileID=7433441132597879392&amp;guid=05bd22aea2c7e474d9c2b4a81e946ed9&amp;type=3#scriptable-system-viewer-v2"/>
+    <Style src="project://database/Assets/NamelessGames/CSS/common-styles.uss?fileID=7433441132597879392&amp;guid=100304d049e322a488b6dfbf500e36e8&amp;type=3#common-styles"/>
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-common.uss?fileID=7433441132597879392&amp;guid=55e8d6c6616970b4ca7a4e6210486bae&amp;type=3#scriptable-system-common"/>
+    <ui:VisualElement name="scriptable-system-viewer-container" class="ssv-root">
+        <ui:VisualElement name="left-panel" class="ssv-left-panel" style="flex-grow: 1;">
+            <ui:VisualElement name="header" class="ssv-header">
+                <ui:Label text="Viewer" name="header-label" class="ssv-header-label"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="search-container" class="search-container">
+                <ui:TextField placeholder-text="Filter assets..." name="search-text-field" class="search-text-field"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="filters-container" class="ssv-filters-container">
+                <ui:Button text="All" name="remove-type-filter-button" class="ssv-button"/>
+                <ui:Button text="Variables" name="variable-type-filter-button" class="ssv-button"/>
+                <ui:Button text="Events" name="event-type-filter-button" class="ssv-button"/>
+                <ui:Button text="Arrays" name="array-type-filter-button" class="ssv-button"/>
+                <ui:Button text="Lists" name="list-type-filter-button" class="ssv-button"/>
+                <ui:Button text="HashSets" name="hashset-type-filter-button" class="ssv-button"/>
+                <ui:Button text="Dictionaries" name="dictionary-type-filter-button" class="ssv-button"/>
+            </ui:VisualElement>
+            <ui:ScrollView name="list-existing-item-scroll-view" class="ssv-list-existing-item-scroll-view"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" class="ssv-right-panel" style="flex-grow: 1;"/>
+    </ui:VisualElement>
+</ui:UXML>

@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1061604e6f253442ad9ada5a7e49ebb, type: 3}
   m_Name: Bool Event Nuovissimo 63
   m_EditorClassIdentifier: 
-  ListenersReferrals: []
-  InvokersReferrals:
-  - GUID: 0c82975de8cc06c45aae5be56e2d8b1a
-    ContainerGUID: 
+  Referrals:
+  - ContainerGUID: 0c82975de8cc06c45aae5be56e2d8b1a
+    ContainerName: Bool Variable 63
+    GameObjectFileID: 
+    _gameObjectName: 
+    ComponentNames: []
+    Kind: 2
+    Label: Bool Variable 63
+  _ngName: 
+  _ngDescription: "Ma questa descrizione \xE8 per caso fantastica?"
+  _lastMessage: 0
   _fakeArg: 0

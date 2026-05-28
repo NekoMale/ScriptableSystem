@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: Bool Event Nuovissimo
   m_EditorClassIdentifier: 
   Referrals:
+  - ContainerGUID: 3c0e3af804b76f045b1bc6a65fc1022e
+    ContainerName: Bool Variable 62
+    GameObjectFileID: 
+    _gameObjectName: 
+    ComponentNames: []
+    Kind: 2
+    Label: Bool Variable 62
   - ContainerGUID: 1c52b2d529670054da66e76e05e72230
     ContainerName: Bool Variable 1
     GameObjectFileID: 
@@ -20,4 +27,6 @@ MonoBehaviour:
     ComponentNames: []
     Kind: 2
     Label: Bool Variable 1
+  _ngName: 
+  _ngDescription: 
   _fakeArg: 0

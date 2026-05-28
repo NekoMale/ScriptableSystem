@@ -1,0 +1,56 @@
+.ssv-existing-item {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    -unity-text-align: upper-left;
+}
+
+.ssv-existing-item:hover {
+    background-color: rgba(134, 156, 190, 0.5);
+    border-left-color: rgba(135, 156, 190, 0.5);
+    border-right-color: rgba(135, 156, 190, 0.5);
+    border-top-color: rgba(135, 156, 190, 0.5);
+    border-bottom-color: rgba(135, 156, 190, 0.5);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.ssv-existing-item:active {
+    background-color: rgba(95, 126, 174, 0.5);
+    border-left-color: rgb(95, 126, 174);
+    border-right-color: rgb(95, 126, 174);
+    border-top-color: rgb(95, 126, 174);
+    border-bottom-color: rgb(95, 126, 174);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.ssv-existing-item-header {
+    -unity-font-style: bold;
+}
+
+.ssv-existing-item-type-label {
+    font-size: 10px;
+}

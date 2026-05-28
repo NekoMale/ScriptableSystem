@@ -119,6 +119,160 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &226793425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 226793428}
+  - component: {fileID: 226793427}
+  - component: {fileID: 226793426}
+  m_Layer: 0
+  m_Name: Paggiett (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &226793426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226793425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &226793427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226793425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &226793428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226793425}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &263193528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263193531}
+  - component: {fileID: 263193530}
+  - component: {fileID: 263193529}
+  m_Layer: 0
+  m_Name: Paggiett (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &263193529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263193528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &263193530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263193528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &263193531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263193528}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +365,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &679113967
+--- !u!1 &593369589
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,52 +373,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 679113969}
-  - component: {fileID: 679113970}
-  - component: {fileID: 679113971}
+  - component: {fileID: 593369592}
+  - component: {fileID: 593369591}
+  - component: {fileID: 593369590}
   m_Layer: 0
-  m_Name: Paggiett
+  m_Name: Paggiett (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &679113969
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679113967}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &679113970
+--- !u!114 &593369590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679113967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Prova
-  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
-  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
---- !u!114 &679113971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 679113967}
+  m_GameObject: {fileID: 593369589}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
@@ -285,6 +410,192 @@ MonoBehaviour:
     Response:
       m_PersistentCalls:
         m_Calls: []
+--- !u!114 &593369591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593369589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &593369592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593369589}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &694312226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694312229}
+  - component: {fileID: 694312228}
+  - component: {fileID: 694312227}
+  m_Layer: 0
+  m_Name: Paggiett (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &694312227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694312226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &694312228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694312226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &694312229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694312226}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &932990902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932990905}
+  - component: {fileID: 932990904}
+  - component: {fileID: 932990903}
+  m_Layer: 0
+  m_Name: Paggiett (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &932990903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932990902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &932990904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932990902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &932990905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932990902}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962636810
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,10 +627,612 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1144579612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1144579615}
+  - component: {fileID: 1144579614}
+  - component: {fileID: 1144579613}
+  m_Layer: 0
+  m_Name: Paggiett (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1144579613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144579612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1144579614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144579612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1144579615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144579612}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1419689548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1419689551}
+  - component: {fileID: 1419689550}
+  - component: {fileID: 1419689549}
+  m_Layer: 0
+  m_Name: Paggiett (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1419689549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419689548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1419689550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419689548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: b7dc2624ff41548488c4a3a4c971de70, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1419689551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419689548}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1424372381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1424372384}
+  - component: {fileID: 1424372383}
+  - component: {fileID: 1424372382}
+  m_Layer: 0
+  m_Name: Paggiett (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1424372382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424372381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1424372383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424372381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1424372384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424372381}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1559373922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559373925}
+  - component: {fileID: 1559373924}
+  - component: {fileID: 1559373923}
+  m_Layer: 0
+  m_Name: Paggiett (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1559373923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559373922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1559373924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559373922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1559373925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559373922}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1977680656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1977680659}
+  - component: {fileID: 1977680658}
+  - component: {fileID: 1977680657}
+  m_Layer: 0
+  m_Name: Paggiett (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1977680657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977680656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1977680658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977680656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1977680659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977680656}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1995047895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995047898}
+  - component: {fileID: 1995047897}
+  - component: {fileID: 1995047896}
+  m_Layer: 0
+  m_Name: Paggiett (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1995047896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995047895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad3032d96b40a14997297a61c53333a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::IntEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+  - Event: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1995047897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995047895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddae7c669f393fa4ab5596135a1647cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Prova
+  _bla: {fileID: 11400000, guid: d466af1d2dd434742b4f6a32b2baec2d, type: 2}
+  _variable: {fileID: 11400000, guid: 3f551f39edfda7347ae75ad488c86a37, type: 2}
+  CIAO:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1995047898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995047895}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1863601953873897233
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 339074690482361610, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008449664854243786, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: m_Name
+      value: Paggiett
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[0].Event
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[1].Event
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[2].Event
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f692f2bfc409c046a9e5cd57b8c527e, type: 2}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[0].SubscribeOnEnable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[1].SubscribeOnEnable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[0].UnsubscribeOnDisable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[1].UnsubscribeOnDisable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[2].UnsubscribeOnDisable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[0].AskLastEventOnSubscribe
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8105860678554446039, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      propertyPath: _baseEventsDatas.Array.data[1].AskLastEventOnSubscribe
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7008449664854243786, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1863601953873897235}
+  m_SourcePrefab: {fileID: 100100000, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+--- !u!1 &1863601953873897234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7008449664854243786, guid: 9f14debb08394e748a7b68e64c75ee19, type: 3}
+  m_PrefabInstance: {fileID: 1863601953873897233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1863601953873897235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863601953873897234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a693c751fa845b54e9f9cb18c2bd86ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NamelessGames.ScriptableSystem::NamelessGames.ScriptableSystem.Events.BoolEventsListener
+  _baseEventsDatas:
+  - Event: {fileID: 0}
+    SubscribeOnEnable: 0
+    UnsubscribeOnDisable: 0
+    AskLastEventOnSubscribe: 0
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 679113969}
+  - {fileID: 1863601953873897233}
+  - {fileID: 1419689551}
+  - {fileID: 1424372384}
+  - {fileID: 694312229}
+  - {fileID: 263193531}
+  - {fileID: 1559373925}
+  - {fileID: 1977680659}
+  - {fileID: 1995047898}
+  - {fileID: 593369592}
+  - {fileID: 226793428}
+  - {fileID: 1144579615}
+  - {fileID: 932990905}
   - {fileID: 962636812}

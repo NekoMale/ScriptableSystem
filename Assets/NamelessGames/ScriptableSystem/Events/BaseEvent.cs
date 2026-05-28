@@ -8,7 +8,7 @@ namespace NamelessGames.ScriptableSystem.Events
     {
         event System.Action<TArg> OnEvent;
         bool _firstTime = true;
-        TArg _lastMessage;
+        [SerializeField] TArg _lastMessage;
 
 #if UNITY_EDITOR
         [SerializeField] TArg _fakeArg;

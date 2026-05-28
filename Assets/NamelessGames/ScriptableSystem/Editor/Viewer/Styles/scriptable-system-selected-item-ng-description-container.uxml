@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="selected-item-ng-description-container" class="ssv-selected-item-ng-description-container" style="flex-grow: 1;">
+        <ui:Label text="DESCRIPTION" name="selected-item-ng-description-label" class="ssv-selected-item-detail-label"/>
+        <ui:TextField placeholder-text="Custom description that could be usefull to designers..." name="selected-item-ng-description-text-field" multiline="true" binding-path="_ngDescription" class="ssv-selected-item-ng-description-text-field ssv-selected-item-property ssv-selected-item-property-full-column"/>
+    </ui:VisualElement>
+</ui:UXML>

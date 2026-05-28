@@ -1,0 +1,22 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="scriptable-system-selected-item-header" src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/Details/scriptable-system-selected-item-header.uxml?fileID=9197481963319205126&amp;guid=ff139582b8a0c6f40ad1a92c42042207&amp;type=3#scriptable-system-selected-item-header"/>
+    <ui:Template name="scriptable-system-selected-item-ng-description-container" src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/Details/scriptable-system-selected-item-ng-description-container.uxml?fileID=9197481963319205126&amp;guid=6f39bbab90db4ea4bb0dc471f6509657&amp;type=3#scriptable-system-selected-item-ng-description-container"/>
+    <ui:Template name="scriptable-system-viewer-referral-list-view" src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/scriptable-system-viewer-referral-list-view.uxml?fileID=9197481963319205126&amp;guid=d104cbb34fdcf844ab2433c30c7d56ef&amp;type=3#scriptable-system-viewer-referral-list-view"/>
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-viewer-selected-ngscriptable-object-detail.uss?fileID=7433441132597879392&amp;guid=16a7473c40a1388448b8726226bb9e5f&amp;type=3#scriptable-system-viewer-selected-ngscriptable-object-detail"/>
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-viewer-selected-event-detail.uss?fileID=7433441132597879392&amp;guid=97910ffe30f826448bbaae17d1488162&amp;type=3#scriptable-system-viewer-selected-event-detail"/>
+    <ui:Instance template="scriptable-system-selected-item-header" name="scriptable-system-selected-item-header" class="ssv-selected-item-detail-header"/>
+    <ui:TabView name="selected-item-detail-tab-view" class="ssv-selected-item-detail-tab-view">
+        <ui:Tab label="Overview" name="selected-item-overview-tab" class="ssv-selected-item-detail-tab">
+            <ui:VisualElement name="selected-item-details-container" style="flex-grow: 1;">
+                <ui:Instance template="scriptable-system-selected-item-ng-description-container" name="scriptable-system-selected-item-ng-description-container"/>
+                <ui:VisualElement name="selected-item-values-container" style="flex-grow: 1;">
+                    <ui:Label text="VALUES" name="selected-item-values-label" class="ssv-selected-item-detail-label"/>
+                    <uie:PropertyField name="selected-item-starting-value-property" binding-path="_lastMessage" class="ssv-selected-item-ng-description-text-field ssv-selected-item-property ssv-selected-item-property-full-column"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:Tab>
+        <ui:Tab label="Referrals" name="selected-item-referrals-tab" class="ssv-selected-item-detail-tab">
+            <ui:Instance template="scriptable-system-viewer-referral-list-view"/>
+        </ui:Tab>
+    </ui:TabView>
+</ui:UXML>

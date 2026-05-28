@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Editor/Inspectors/Styles/CSS/base-events-listener-inspector.uss?fileID=7433441132597879392&amp;guid=2d6558f3ea5eeee4b8a62aa3b08ac6db&amp;type=3#base-events-listener-inspector"/>
+    <Style src="project://database/Assets/NamelessGames/CSS/common-styles.uss?fileID=7433441132597879392&amp;guid=100304d049e322a488b6dfbf500e36e8&amp;type=3#common-styles"/>
+    <ui:ListView virtualization-method="DynamicHeight" header-title="EVENTS LISTENED" show-add-remove-footer="true" show-foldout-header="true" reorderable="true" binding-path="_baseEventsDatas" name="events-listener-list-view" item-template="project://database/Assets/NamelessGames/ScriptableSystem/Editor/Inspectors/Styles/base-event-data-item.uxml?fileID=9197481963319205126&amp;guid=97986829aa989514fbd561f6ebdefabb&amp;type=3#base-event-data-item" allow-remove="false"/>
+</ui:UXML>

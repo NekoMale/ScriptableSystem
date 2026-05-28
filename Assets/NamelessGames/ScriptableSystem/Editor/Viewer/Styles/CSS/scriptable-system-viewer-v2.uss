@@ -1,0 +1,218 @@
+.ssv-root {
+    flex-direction: row;
+}
+
+.ssv-left-panel {
+    width: 225px;
+    min-width: 225px;
+    max-width: 225px;
+    max-height: 550px;
+    min-height: 350px;
+}
+
+.ssv-header {
+    background-color: rgb(38, 38, 36);
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-right: 0;
+    padding-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-color: rgb(84, 84, 82);
+    border-right-color: rgb(84, 84, 82);
+    border-top-color: rgb(84, 84, 82);
+    border-bottom-color: rgb(84, 84, 82);
+    font-size: 16px;
+    -unity-font-style: bold;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+.search-container {
+    height: 48px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-color: rgb(38, 38, 36);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(84, 84, 82);
+    border-right-color: rgb(84, 84, 82);
+    border-top-color: rgb(84, 84, 82);
+    border-bottom-color: rgb(84, 84, 82);
+    min-height: 48px;
+    max-height: 48px;
+}
+
+.search-text-field {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    height: 30px;
+    font-size: 16px;
+    color: rgb(119, 119, 117);
+}
+
+.search-text-field > #unity-text-input {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 2px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    font-size: 14px;
+    color: rgb(119, 119, 117);
+    background-color: rgb(48, 48, 46);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(84, 84, 82);
+    border-right-color: rgb(84, 84, 82);
+    border-top-color: rgb(84, 84, 82);
+    border-bottom-color: rgb(84, 84, 82);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -unity-font-style: bold;
+}
+
+.ssv-filters-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top-width: 0;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(84, 84, 82);
+    border-right-color: rgb(84, 84, 82);
+    border-top-color: rgb(84, 84, 82);
+    border-bottom-color: rgb(84, 84, 82);
+    background-color: rgb(38, 38, 36);
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    height: 105px;
+    min-height: 105px;
+    max-height: 105px;
+}
+
+.ssv-button {
+    font-size: 14px;
+    -unity-font-style: bold;
+    background-color: rgb(38, 38, 36);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(84, 84, 82);
+    border-right-color: rgb(84, 84, 82);
+    border-top-color: rgb(84, 84, 82);
+    border-bottom-color: rgb(84, 84, 82);
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.ssv-button:hover {
+    font-size: 14px;
+    -unity-font-style: bold;
+    background-color: rgb(210, 210, 210);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(84, 84, 82);
+    border-right-color: rgb(84, 84, 82);
+    border-top-color: rgb(84, 84, 82);
+    border-bottom-color: rgb(84, 84, 82);
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+    color: rgb(38, 38, 36);
+}
+
+.ssv-button:active {
+    font-size: 14px;
+    -unity-font-style: bold;
+    background-color: rgb(210, 210, 210);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(84, 84, 82);
+    border-right-color: rgb(84, 84, 82);
+    border-top-color: rgb(84, 84, 82);
+    border-bottom-color: rgb(84, 84, 82);
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+    color: rgb(38, 38, 36);
+}
+
+.ssv-list-existing-item-scroll-view {
+    border-left-color: rgb(84, 84, 82);
+    border-right-color: rgb(84, 84, 82);
+    border-top-color: rgb(84, 84, 82);
+    border-bottom-color: rgb(84, 84, 82);
+    border-top-width: 0;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: rgb(38, 38, 36);
+    border-bottom-left-radius: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    height: 350px;
+    max-height: 350px;
+}
+
+.ssv-right-panel {
+    max-height: 550px;
+    width: 500px;
+    min-width: 500px;
+    max-width: 450px;
+    min-height: 350px;
+    background-color: rgb(48, 48, 46);
+}
+
+
+
+

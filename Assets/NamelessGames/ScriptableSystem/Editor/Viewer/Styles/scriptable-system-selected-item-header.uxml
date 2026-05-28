@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="selected-item-detail-name-type-container" class="ssv-selected-item-detail-name-type-container" style="flex-grow: 1;">
+        <ui:Label text="NGScriptableObjectName" name="selected-item-name-label" binding-path="m_Name" class="ssv-selected-item-detail-name-label"/>
+        <ui:VisualElement name="selected-item-type" class="ssv-selected-item-detail-type ssv-selected-item-detail-type-event ssv-selected-item-detail-type-variable">
+            <ui:Label text="NGScriptableObjectType" name="selected-item-type-label"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button text="⦿ Ping" name="selected-item-ping-button" class="ssv-ping-button"/>
+</ui:UXML>

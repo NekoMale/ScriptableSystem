@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="selected-item-referral-label-container" class="ng-horizontal-children ssv-selected-item-detail-label">
+        <ui:Label text="REFERRALS" name="ssv-selected-item-referral-label"/>
+        <ui:Label text="(" name="ssv-selected-item-referral-label-parenthesis"/>
+        <ui:Label text="" binding-path="Referrals.Array.size" name="ssv-selected-item-referral-label-count"/>
+        <ui:Label text=")" name="ssv-selected-item-referral-label-parenthesis" class="ng-grow"/>
+    </ui:VisualElement>
+    <ui:ListView binding-path="Referrals" allow-add="false" allow-remove="false" show-bound-collection-size="false" virtualization-method="DynamicHeight" name="selected-item-referral-list-view" item-template="project://database/Assets/NamelessGames/ScriptableSystem/Editor/Viewer/Styles/scriptable-system-viewer-referral-wrapper.uxml?fileID=9197481963319205126&amp;guid=8c83a81f9e718f840a3adfccfd55a984&amp;type=3#scriptable-system-viewer-referral-wrapper" class="ssv-selected-item-detail-referral-list-view" style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;"/>
+</ui:UXML>

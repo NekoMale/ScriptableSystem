@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-viewer-existing-item.uss?fileID=7433441132597879392&amp;guid=98de3a6f092f6cb4f8743d9542595265&amp;type=3#scriptable-system-viewer-existing-item"/>
+    <ui:Button text="" name="existing-item" class="ssv-existing-item">
+        <ui:Label text="Label" name="existing-item-header" class="ssv-existing-item-header"/>
+        <ui:Label text="Label" name="existing-item-type-label" class="ssv-existing-item-type-label"/>
+    </ui:Button>
+</ui:UXML>

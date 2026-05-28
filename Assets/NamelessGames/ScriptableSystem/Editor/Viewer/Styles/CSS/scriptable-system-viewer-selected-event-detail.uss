@@ -1,0 +1,4 @@
+.ssv-selected-item-detail-type-event {
+    background-color: rgb(230, 241, 251);
+    color: rgb(24, 95, 165);
+}

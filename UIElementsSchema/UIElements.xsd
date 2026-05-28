@@ -12,7 +12,6 @@
   <xs:import schemaLocation="UnityEditor.U2D.Layout.xsd" namespace="UnityEditor.U2D.Layout" />
   <xs:import schemaLocation="UnityEditor.U2D.Animation.xsd" namespace="UnityEditor.U2D.Animation" />
   <xs:import schemaLocation="UnityEditor.U2D.Animation.Upgrading.xsd" namespace="UnityEditor.U2D.Animation.Upgrading" />
-  <xs:include schemaLocation="GlobalNamespace.xsd" />
   <xs:import schemaLocation="Unity.UIToolkit.Editor.xsd" namespace="Unity.UIToolkit.Editor" />
   <xs:import schemaLocation="UnityEngine.xsd" namespace="UnityEngine" />
   <xs:import schemaLocation="UnityEditor.UIElements.Debugger.xsd" namespace="UnityEditor.UIElements.Debugger" />

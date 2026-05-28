@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/NamelessGames/ScriptableSystem/Styles/CSS/scriptable-system-viewer-referral.uss?fileID=7433441132597879392&amp;guid=aff67fbaed4610a4089caaa8a6b08c4d&amp;type=3#scriptable-system-viewer-referral"/>
+    <ui:VisualElement name="referral-root" class="ssv-referral-root" style="flex-grow: 1;">
+        <ui:VisualElement name="referral-type-container" class="ssv-referral-type-container ssv-referral-type-scene">
+            <ui:Label text="ReferralType" name="referral-type-label" binding-path="Kind" class="ng-small-text ng-bold-text"/>
+        </ui:VisualElement>
+        <ui:Label text="Label" binding-path="Label" name="referral-label" class="ng-grow ng-bold-text"/>
+        <ui:Button text="⦿ Ping" name="referral-ping-button" class="ssv-ping-button"/>
+    </ui:VisualElement>
+</ui:UXML>

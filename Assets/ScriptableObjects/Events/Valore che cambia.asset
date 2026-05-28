@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4731db7715ab6c4694945ac5074c5a8, type: 3}
+  m_Name: Valore che cambia
+  m_EditorClassIdentifier: 
+  _ngName: 
+  _ngDescription: 
+  Referrals:
+  - ContainerGUID: 8b0d1bcc7a1542e4c8254ab340a2e02d
+    ContainerName: GameObject.prefab
+    GameObjectFileID: 4358242571939894330
+    _gameObjectName: GameObject
+    ComponentNames:
+    - Component
+    Kind: 1
+    Label: 'GameObject.prefab > GameObject [Component]'
+  - ContainerGUID: fba11a98c1dc43d4ca9e4875e5026429
+    ContainerName: Try2.unity
+    GameObjectFileID: 1641234516
+    _gameObjectName: GameObject (1)
+    ComponentNames:
+    - Component
+    Kind: 0
+    Label: 'Try2.unity > GameObject (1) [Component]'
+  - ContainerGUID: 9f14debb08394e748a7b68e64c75ee19
+    ContainerName: Paggiett.prefab
+    GameObjectFileID: 7008449664854243786
+    _gameObjectName: Paggiett
+    ComponentNames:
+    - IntEventsListener
+    Kind: 1
+    Label: 'Paggiett.prefab > Paggiett [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 226793425
+    _gameObjectName: Paggiett (8)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (8) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 263193528
+    _gameObjectName: Paggiett (3)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (3) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 593369589
+    _gameObjectName: Paggiett (7)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (7) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 694312226
+    _gameObjectName: Paggiett (2)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (2) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 932990902
+    _gameObjectName: Paggiett (10)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (10) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 1144579612
+    _gameObjectName: Paggiett (9)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (9) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 1419689548
+    _gameObjectName: Paggiett (11)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (11) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 1424372381
+    _gameObjectName: Paggiett (1)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (1) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 1559373922
+    _gameObjectName: Paggiett (4)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (4) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 1977680656
+    _gameObjectName: Paggiett (5)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (5) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 1995047895
+    _gameObjectName: Paggiett (6)
+    ComponentNames:
+    - IntEventsListener
+    Kind: 0
+    Label: 'Try.unity > Paggiett (6) [IntEventsListener]'
+  - ContainerGUID: 2cda990e2423bbf4892e6590ba056729
+    ContainerName: Try.unity
+    GameObjectFileID: 
+    _gameObjectName: GameObject ()
+    ComponentNames:
+    - Component
+    - Component
+    Kind: 0
+    Label: 'Try.unity > GameObject () [Component, Component]'
+  _lastMessage: 0
+  _fakeArg: 0

@@ -6,13 +6,13 @@ namespace NamelessGames.ScriptableSystem.Variables
 {
     public abstract class BaseVariable : NGScriptableObject { }
 
-    public abstract class BaseVariable<TArg, TEvent> : BaseVariable where TEvent : BaseEvent<TArg>
+    public abstract class BaseVariable<TArg, TEvent/*, TTEvent*/> : BaseVariable where TEvent : BaseEvent<TArg> //where TTEvent : BaseEvent<(TArg, TArg)>
     {
         [SerializeField] protected TArg _value;
         [SerializeField] TArg _startingValue;
 
         public TEvent ValueChanged;
-        //public event Action<T, T> ValueChangedWithLastValue;
+        //public TTEvent ValueChangedWithLastValue;
 
         public TArg Value
         {
@@ -21,7 +21,7 @@ namespace NamelessGames.ScriptableSystem.Variables
             {
                 if (EqualityComparer<TArg>.Default.Equals(_value, value)) return;
 
-                TArg lastValue = _value;
+                //TArg lastValue = _value;
                 _value = value;
                 ValueChanged?.Invoke(_value);
                 //ValueChangedWithLastValue?.Invoke(lastValue, _value);
@@ -36,14 +36,14 @@ namespace NamelessGames.ScriptableSystem.Variables
         public static implicit operator TArg(BaseVariable<TArg, TEvent> variable) => variable._value;
 
         public override bool Equals(object other)
-        {
+        {            
             if (other is BaseVariable<TArg, TEvent> otherVariable)
             {
                 return otherVariable._value.Equals(_value);
             }
             if (other is TArg otherArg)
             {
-                return otherArg.Equals(_value);
+                return EqualityComparer<TArg>.Default.Equals(otherArg, _value);
             }
             return false;
         }

@@ -1,0 +1,65 @@
+.ssv-ping-button {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(82, 82, 80);
+    border-right-color: rgb(82, 82, 80);
+    border-top-color: rgb(82, 82, 80);
+    border-bottom-color: rgb(82, 82, 80);
+    background-color: rgb(70, 70, 70);
+    min-height: 20px;
+    max-height: 30px;
+}
+
+.ssv-ping-button:hover {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(82, 82, 80);
+    border-right-color: rgb(82, 82, 80);
+    border-top-color: rgb(82, 82, 80);
+    border-bottom-color: rgb(82, 82, 80);
+    background-color: rgb(94, 94, 94);
+    min-height: 20px;
+    max-height: 30px;
+}
+
+.ssv-ping-button:active {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(82, 82, 80);
+    border-right-color: rgb(82, 82, 80);
+    border-top-color: rgb(82, 82, 80);
+    border-bottom-color: rgb(82, 82, 80);
+    background-color: rgb(120, 120, 120);
+    min-height: 20px;
+    max-height: 30px;
+}
